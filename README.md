@@ -14,7 +14,7 @@
 flowchart BT
 ClientA --> |retrieve formulae list| HBAPI[Homebrew API]
 ClientB --> |retrieve formulae list| HBAPI
-ClientA --> |retrieve package using bottle hash| ClientB
+ClientA --> |request package data & verify, both by hash| ClientB
 ClientB --> |retrieve package data| HBCR[Homebrew registry]
 ```
 
